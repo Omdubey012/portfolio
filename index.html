@@ -3,9 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Om Dubey - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Hello World
+    <header>
+        <nav>
+            <div class="logo">Om Dubey</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div id="particles-js"></div>
+            <div class="hero-text">
+                <h1>I'm Om Dubey</h1>
+                <p>A <span class="typing"></span></p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="https://via.placeholder.com/250" alt="Om Dubey" class="profile-pic">
+                <div class="about-text">
+                    <p>
+                        They call me the "Elon Musk of India," and while I appreciate the sentiment, my vision is uniquely my own. I am an innovator, an entrepreneur, and a relentless pursuer of a future where technology solves humanity's greatest challenges. 
+                    </p>
+                    <p>
+                        My journey began with a simple line of code and a fascination for the impossible. Today, my ventures span across renewable energy, interplanetary transportation, and artificial intelligence, all driven by a singular mission: to accelerate our transition to a sustainable and multi-planetary civilization.
+                    </p>
+                    <p>
+                        I believe in first-principles thinking, questioning everything, and building from the ground up. The projects you'll see here are not just lines of code; they are the building blocks of a new world.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>A brief description of the project.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>A brief description of the project.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Om Dubey</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
