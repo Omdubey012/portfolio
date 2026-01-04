@@ -85,6 +85,16 @@ nav ul li a:hover {
     color: var(--primary-color);
 }
 
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
 #hero {
     height: 100vh;
     display: flex;
@@ -287,6 +297,48 @@ footer {
 .social-links a:hover {
     color: var(--primary-color);
 }
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: var(--background-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+
+    .project-card-content {
+        padding: 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
 @media only screen and (max-width: 600px) {
   
   .logo {
@@ -295,4 +347,16 @@ footer {
     color: var(--light-color);
     text-decoration: none;
 }
+
+    h2.section-title {
+        font-size: 2rem;
+    }
+
+    #projects .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #contact form {
+        padding: 0 1rem;
+    }
 }
