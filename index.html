@@ -30,18 +30,19 @@
 
     <main>
         <section id="hero">
-            <h1>Hi, I'm <span>Om Dubey</span></h1>
-            <p>An aspiring software developer crafting modern web experiences.</p>
+            <h1 class="hero-title">Om <br><span>Dubey</span></h1>
+            <p class="hero-description">I am completing BSC in Computer Science from Thakur Shyamnarayan Degree college.</p>
+            <a href="#about" class="btn btn-primary">Learn More</a>
         </section>
 
         <div class="container">
             <section id="about">
                 <h2 class="section-title">About Me</h2>
                 <p>
-                    I am a passionate and driven aspiring software developer with a strong foundation in web development
-                    technologies. I specialize in creating responsive and user-friendly web applications. I am a quick
-                    learner, a collaborative team player, and I am actively seeking opportunities to contribute to
-                    innovative projects and grow as a developer.
+                    I am a first-year Computer Science student committed to building a strong foundation in programming and technology.
+                    I believe in learning by doing—through assignments, projects, and consistent practice. 
+                    I am passionate about exploring new concepts, understanding how technology works, and developing skills that will 
+                    shape me into a capable IT professional in the future.
                 </p>
             </section>
 
@@ -50,7 +51,8 @@
                 <div class="project-grid">
                     <div class="project-card">
                         <div class="project-card-image">
-                            <span>Project Screenshot</span>
+                            <img src="https://placehold.co/600x400/1e1e1e/f4f4f4?text=Project+One"
+                                alt="Project One Screenshot">
                         </div>
                         <div class="project-card-content">
                             <h3>Project One</h3>
@@ -64,7 +66,8 @@
                     </div>
                     <div class="project-card">
                         <div class="project-card-image">
-                            <span>Project Screenshot</span>
+                            <img src="https://placehold.co/600x400/1e1e1e/f4f4f4?text=Project+Two"
+                                alt="Project Two Screenshot">
                         </div>
                         <div class="project-card-content">
                             <h3>Project Two</h3>
@@ -78,7 +81,8 @@
                     </div>
                     <div class="project-card">
                         <div class="project-card-image">
-                            <span>Project Screenshot</span>
+                            <img src="https://placehold.co/600x400/1e1e1e/f4f4f4?text=Project+Three"
+                                alt="Project Three Screenshot">
                         </div>
                         <div class="project-card-content">
                             <h3>Project Three</h3>
@@ -127,10 +131,19 @@
             <section id="contact">
                 <h2 class="section-title">Get In Touch</h2>
                 <form>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-comment-alt"></i>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
                 </form>
             </section>
         </div>
